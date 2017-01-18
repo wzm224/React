@@ -1,4 +1,80 @@
-
+var CssStyle = {
+	"more":{
+		"width":"100%",
+		"height":"3rem"
+	},
+	"moretop":{
+		"width":"100%",
+		"height":"1.5rem",
+		"overflow":"hidden"
+	},
+	"moredown":{
+		"width":"100%",
+		"height":"1.5rem",
+		"overflow":"hidden"
+	},
+	"moreimg":{
+		"display":"block",
+		"width":".5rem",
+		"height":".5rem",
+		"borderRadius":".5rem"
+	},
+	"moreli":{
+		"width":"50%",
+		"height":"50%",
+		"float":"left",
+		"boxSizing":"border-box",
+		"borderBottom":"1px solid #ededed",
+		"borderRight":"1px solid #ededed"
+	},
+	"morelileft":{
+		"width":"60%",
+		"height":"100%",
+		"float":"left",
+		"display":"flex",
+		"flexDirection":"column",
+		"justify-content": "center"
+	},
+	"morelih3":{
+		"color":"#f64c43",
+		"margin":"0 0 .1rem .11rem",
+		"fontSize":".15rem"
+	},
+	"morelispan":{
+		"color":"#c6c6c6",
+		"marginLeft":".11rem",
+		"fontSize":".12rem"
+	},
+	"moreliright":{
+		"width":"40%",
+		"height":"100%",
+		"float":"left",
+		"display":"flex",
+		"align-items":"center",
+		"justify-content": "center"
+	},
+	"morediv":{
+		"width":"33.3%",
+		"height":"100%",
+		"float":"left",
+		"display":"flex",
+		"align-items":"center",
+		"flexDirection":"column",
+		"boxSizing":"border-box",
+		"borderRight":"1px solid #ededed",
+		"borderBottom":"1px solid #ededed",
+	},
+	"moredivh3":{
+		"color":"#fbb319",
+		"marginTop":".2rem",
+		"fontSize":".15rem"
+	},
+	"moredivp":{
+		"color":"#a4a4a4",
+		"margin":".15rem 0",
+		"fontSize":".12rem"
+	}
+};
 var More = React.createClass({
 
 	getDefaultProps:function(){
@@ -56,7 +132,7 @@ var More = React.createClass({
 		}
 
 		return(
-			<div>
+			<div style={CssStyle.more}>
 				<ul style={CssStyle.moretop}>
 					{morearr1}
 				</ul>

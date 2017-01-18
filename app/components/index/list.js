@@ -1,3 +1,95 @@
+var CssStyle = {
+
+	"list":{
+		"width":"100%",
+		"height":"auto",
+	},
+	"listli":{
+		"width":"96%",
+		"height":"1.05rem",
+		"padding":"0 0 0 2%",
+		"borderBottom":"1px solid #ececec"
+	},
+	"listleft":{
+		"width":"30%",
+		"height":".8rem",
+		"float":"left",
+		"margin":".15rem .2rem 0 0"
+	},
+	"listimg":{
+		"width":"100%",
+		"height":"100%"
+	},
+	"listright":{
+		"width":"55%",
+		"height":".8rem",
+		"float":"left",
+		"marginTop":".2rem",
+		"fontSize":".12rem"
+	},
+	"listtitle":{
+		"display": "inline-block",
+		"width":"70%",
+		"height":".2rem",
+		"lineHeight":".2rem",
+		"fontSize":".15rem",
+		"overflow":"hidden",
+		"textOverflow":"ellipsis",
+		"whiteSpace": "nowrap",
+		"fontWeight":"blod"
+	},
+	"listkm":{
+		"display": "inline-block",
+		"height":".2rem",
+		"lineHeight":".2rem",
+		"color":"#c1c1c1",
+		"overflow":"hidden",
+		"fontStyle":"normal",
+		"float":"right"
+	},
+	"listaddress":{
+		"width":"95%",
+		"height":".13rem",	
+		"fontSize":".13rem",
+		"lineHeight":".13rem",
+		"padding":".08rem 0",
+		"whiteSpace": "nowrap",
+		"overflow":"hidden",
+		"color":"#c1c1c1"
+	},
+	"listprice":{
+		"display": "inline-block",
+		"height":".2rem",
+		"lineHeight":".2rem",
+		"color":"#ff4600",
+		"fontSize":".2rem",
+		"fontWeight":"bold"
+	},
+	"listoldprice":{
+		"display": "inline-block",
+		"height":".15rem",
+		"lineHeight":".15rem",
+		"color":"#c1c1c1",
+		"textDecoration":"line-through",
+		"marginLeft":".08rem"
+	},
+	"listsell":{
+		"display": "inline-block",
+		"height":".2rem",
+		"lineHeight":".2rem",
+		"color":"#c1c1c1",
+		"fontStyle":"normal",
+		"float":"right"
+	},
+	"listmore":{
+		"width":"100%",
+		"height":".4rem",
+		"fontSize":".15rem",
+		"lineHeight":".4rem",
+		"textAlign":"center"
+	}
+};
+
 var List = React.createClass({
 	getDefaultProps:function(){
 		return{
@@ -31,7 +123,7 @@ var List = React.createClass({
 			}
 		}
 		return(
-			<ul style={CssStyle.list}>
+			<ul  style={CssStyle.list}>
 				{listarr}
 				<div style={CssStyle.listmore}>查看更多团购</div>
 			</ul>

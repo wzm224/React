@@ -1,3 +1,18 @@
+var CssStyle = {
+	"banner":{
+		"width": "100%",
+		"height":"140px"
+	},
+	"swiper":{
+		"width": "100%",
+		"height":"100%"
+	},
+	"img":{
+		"display":"block",
+		"width": "100%",
+		"height":"100%"
+	}
+};
 var Banner = React.createClass({
 
 	getDefaultProps:function(){
@@ -35,14 +50,14 @@ var Banner = React.createClass({
 		}
 
 		return(
-
+			<div style={CssStyle.banner}>
 			<div style={CssStyle.swiper} className="swiper-container" id="bswp">
 		        <div className="swiper-wrapper">
 		        	{arr}
 		        </div>
 		        <div className="swiper-pagination"></div>
 		    </div>
-
+			</div>
 		)
 	}
 

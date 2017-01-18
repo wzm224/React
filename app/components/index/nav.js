@@ -1,3 +1,37 @@
+var CssStyle = {
+	"nav":{
+		"width": "100%",
+		"height":"2rem",
+		"borderBottom":"1px solid #eee"
+	},
+	"banner":{
+		"width": "100%",
+		"height":"1.4rem"
+	},
+	"navli":{
+		"width": "25%",
+		"height":".8rem",
+		"float":"left",
+		"display":"flex",
+		"justify-content": "center",
+		"align-items":"center",
+		"flexDirection":"column",
+		"marginTop":".08rem"
+	},
+	"navimg":{
+		"display": "block",
+		"width": ".5rem",
+		"height":".5rem"
+	},
+	"navspan":{
+		"display": "block",
+		"width": "100%",
+		"textAlign":"center",
+		"marginTop":".05rem",
+		"fontSize":".12rem"
+	}
+};
+
 var Nav = React.createClass({
 
 	getDefaultProps:function(){
@@ -51,7 +85,7 @@ var Nav = React.createClass({
 
 		return(
 
-
+			<div style={CssStyle.nav}>
 				<div style={CssStyle.swiper} className="swiper-container" id="nswp">
 			        <div style={CssStyle.swiper} className="swiper-wrapper">
 				        <div className="swiper-slide">
@@ -63,6 +97,7 @@ var Nav = React.createClass({
 			        </div>
 			        <div className="swiper-pagination"></div>
 			    </div>
+			</div>
 
 
 		)
